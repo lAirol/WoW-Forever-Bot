@@ -1,0 +1,379 @@
+{
+  "acceptance-roster": {
+    "ok": true,
+    "event_id": 1,
+    "url": "https://discord.com/channels/1563213738797047979/1563288428794224680/1563351368805122049",
+    "steps": [
+      "запись в резерв",
+      "отказ и запись в основу",
+      "запуск без готовности отклонён",
+      "готовность и завершение"
+    ],
+    "completed": true
+  },
+  "acceptance-native": {
+    "ok": true,
+    "event_id": 1563351758498173078,
+    "cancelled": true,
+    "voice_id": 1563288465855090919
+  },
+  "publish-guide": {
+    "ok": true,
+    "guide_url": "https://discord.com/channels/1563213738797047979/1563288428794224680/1563351767364927621"
+  },
+  "ui_checks": {
+    "character_command": true,
+    "ticket_panel_command": true,
+    "ticket_button_after_restart": true,
+    "ticket_closed_history_preserved": true,
+    "archived_roster_file_button_after_restart": true
+  },
+  "rooms_first_pass": {
+    "ok": true,
+    "event_id": 2,
+    "event_room": 1563359604207779902,
+    "ticket_id": 3,
+    "ticket_room": 1563359676270117055,
+    "acl_verified": true,
+    "url": "https://discord.com/channels/1563213738797047979/1563288428794224680/1563359557332500577",
+    "delete_delay_seconds": 60
+  },
+  "rooms_repeat": {
+    "ok": true,
+    "event_id": 3,
+    "event_room": 1563507513754652742,
+    "ticket_id": 4,
+    "ticket_room": 1563507539302293575,
+    "acl_verified": true,
+    "url": "https://discord.com/channels/1563213738797047979/1563288428794224680/1563507509812142104",
+    "delete_delay_seconds": 60
+  },
+  "rooms_cleanup": {
+    "ok": true,
+    "pending": 0,
+    "deleted": [
+      {
+        "kind": "event",
+        "owner": 2,
+        "channel": 1563359604207779902,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "ticket",
+        "owner": 3,
+        "channel": 1563359676270117055,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "event",
+        "owner": 3,
+        "channel": 1563507513754652742,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "ticket",
+        "owner": 4,
+        "channel": 1563507539302293575,
+        "state": "удалено",
+        "api_absent": true
+      }
+    ]
+  },
+  "room_race_reconciled": {
+    "ok": true,
+    "channels": [
+      {
+        "id": 1563359604207779902,
+        "name": "сбор-2"
+      },
+      {
+        "id": 1563359621161291786,
+        "name": "сбор-2"
+      }
+    ],
+    "reconciled": true
+  },
+  "guide_updated": {
+    "ok": true,
+    "guide_url": "https://discord.com/channels/1563213738797047979/1563288428794224680/1563351767364927621"
+  },
+  "temporary_rooms_restart_test": {
+    "restart_while_pending": true,
+    "remaining_seconds_at_restart": {
+      "event2": 24,
+      "event3": 43,
+      "ticket4": 48
+    },
+    "all_deleted_and_api_absent": true
+  },
+  "offline_tests": 64,
+  "limitations": [
+    "Two ordinary accounts have not performed a full end-to-end acceptance test.",
+    "Armor and class are self-declared.",
+    "Bot requires this PC and launcher to remain running.",
+    "Previously closed legacy ticket 1 is preserved."
+  ],
+  "directory": {
+    "commands": [
+      "карточки",
+      "сводка-карточек"
+    ],
+    "ui_checks": {
+      "directory_command": true,
+      "role_filter_empty_result": true,
+      "reset": true,
+      "class_grouping": true,
+      "private_txt_export": true,
+      "summary_command": true
+    },
+    "directory_message_id": 1563510578834833459,
+    "private_export_message_id": 1563511052883464333,
+    "access": "server owner or configured leader roles; checked again for every component action",
+    "data_source": "registered /персонаж profiles; not Discord onboarding roles",
+    "offline_test_count": 7,
+    "live_records_at_check": {
+      "people": 1,
+      "characters": 1
+    },
+    "pagination_live_test": false,
+    "pagination_offline_test": true,
+    "summary_message_id": 1563511168910229626
+  },
+  "operations_bootstrap": {
+    "ok": true,
+    "order_board": 1563513809266544800,
+    "panel_url": "https://discord.com/channels/1563213738797047979/1563288428794224680/1563513813368569917"
+  },
+  "order_cycle": {
+    "ok": true,
+    "order_id": 1,
+    "event_id": 4,
+    "url": "https://discord.com/channels/1563213738797047979/1563513809266544800/1563513842817044541",
+    "closed": true,
+    "room_channel": 1563513865520676865
+  },
+  "operations_ui": {
+    "panel_visible": true,
+    "order_modal_opened": true,
+    "order_modal_submitted": true,
+    "modal_created_order": 2,
+    "cancel_button_after_restart": true,
+    "cancel_modal_submitted": true,
+    "cancelled_order": 2,
+    "cancelled_card_visible": true
+  },
+  "order_room_cleanup": {
+    "ok": true,
+    "pending": 0,
+    "deleted": [
+      {
+        "kind": "event",
+        "owner": 2,
+        "channel": 1563359604207779902,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "ticket",
+        "owner": 3,
+        "channel": 1563359676270117055,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "event",
+        "owner": 3,
+        "channel": 1563507513754652742,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "ticket",
+        "owner": 4,
+        "channel": 1563507539302293575,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "event",
+        "owner": 4,
+        "channel": 1563513865520676865,
+        "state": "удалено",
+        "api_absent": true
+      }
+    ]
+  },
+  "admission_live": {
+    "ok": true,
+    "event_id": 5,
+    "character_id": 2,
+    "url": "https://discord.com/channels/1563213738797047979/1563288428794224680/1563524995202678817",
+    "steps": [
+      "unapproved_main_blocked",
+      "unapproved_reserve_blocked",
+      "revoked_start_blocked",
+      "stale_signup_blocked",
+      "approved_current_revision_completed"
+    ],
+    "completed": true
+  },
+  "admission_ui": {
+    "panel_lookup": true,
+    "review_modal_submitted": true,
+    "approved_for_one_day": true,
+    "reset_modal_submitted": true,
+    "technical_character": {
+      "id": 2,
+      "admission": "не проверен",
+      "revision": 1,
+      "approval_until": null
+    },
+    "history_export": true,
+    "history_message_id": 1563526666540679339,
+    "final_status": "не проверен",
+    "final_expiry": null,
+    "review_message_id": 1563526253980549120
+  },
+  "admission_cleanup": {
+    "ok": true,
+    "pending": 0,
+    "deleted": [
+      {
+        "kind": "event",
+        "owner": 2,
+        "channel": 1563359604207779902,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "ticket",
+        "owner": 3,
+        "channel": 1563359676270117055,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "event",
+        "owner": 3,
+        "channel": 1563507513754652742,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "ticket",
+        "owner": 4,
+        "channel": 1563507539302293575,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "event",
+        "owner": 4,
+        "channel": 1563513865520676865,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "event",
+        "owner": 5,
+        "channel": 1563524998239354933,
+        "state": "удалено",
+        "api_absent": true
+      }
+    ]
+  },
+  "admission_removed": {
+    "ok": true,
+    "panel_url": "https://discord.com/channels/1563213738797047979/1563288428794224680/1563513813368569917",
+    "review_command_absent": true,
+    "options_absent": true,
+    "review_button_absent": true,
+    "historical_checks_retained": true
+  },
+  "seats_live": {
+    "ok": true,
+    "example_id": 6,
+    "example_url": "https://discord.com/channels/1563213738797047979/1563288428794224680/1563542865273950262",
+    "example_rules": [
+      1,
+      2
+    ],
+    "completed_id": 7,
+    "completed_url": "https://discord.com/channels/1563213738797047979/1563288428794224680/1563542870093205626",
+    "completed_rule": 3,
+    "steps": [
+      "setup_blocks_signup",
+      "wrong_armor_main_blocked",
+      "wrong_armor_reserve_blocked",
+      "matching_single_seat_completed"
+    ],
+    "commands_registered": true
+  },
+  "seats_ui": {
+    "requirements_button_after_restart": true,
+    "ephemeral_txt_message_id": 1563543977435734166,
+    "full_text_contains_all_three_seats": true
+  },
+  "seats_cleanup": {
+    "ok": true,
+    "pending": 0,
+    "deleted": [
+      {
+        "kind": "event",
+        "owner": 2,
+        "channel": 1563359604207779902,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "ticket",
+        "owner": 3,
+        "channel": 1563359676270117055,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "event",
+        "owner": 3,
+        "channel": 1563507513754652742,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "ticket",
+        "owner": 4,
+        "channel": 1563507539302293575,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "event",
+        "owner": 4,
+        "channel": 1563513865520676865,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "event",
+        "owner": 5,
+        "channel": 1563524998239354933,
+        "state": "удалено",
+        "api_absent": true
+      },
+      {
+        "kind": "event",
+        "owner": 7,
+        "channel": 1563542873423749140,
+        "state": "удалено",
+        "api_absent": true
+      }
+    ]
+  },
+  "cancelled_scope": [
+    "advanced replacements",
+    "attendance"
+  ]
+}
